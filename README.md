@@ -8,9 +8,9 @@ A Next.js web application where users guess IMDb ratings by watching movie trail
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 <div align="center">
-  <img src="public/Round.png" alt="Round Screen" width="30%" />
-  <img src="public/Guess.png" alt="Guess Mode" width="30%" />
-  <img src="public/ResultPage.png" alt="Results Page" width="30%" />
+  <a href="public/Round.png"><img src="public/Round.png" alt="Round Screen" width="32%" style="clip-path: inset(0 15px 40px 15px);" /></a>
+  <a href="public/Guess.png"><img src="public/Guess.png" alt="Guess Mode" width="32%" style="clip-path: inset(0 15px 40px 15px);" /></a>
+  <a href="public/ResultPage.png"><img src="public/ResultPage.png" alt="Results Page" width="32%" style="clip-path: inset(0 15px 40px 15px);" /></a>
 </div>
 
 ## How to Play
