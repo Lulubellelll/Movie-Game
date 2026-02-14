@@ -169,7 +169,7 @@ export default function MenuScreen({
             </div>
             <footer className={styles.footer}>
                 <a
-                    href="https://www.github.com"
+                    href="https://github.com/Lulubellelll/Movie-Game"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.githubLink}

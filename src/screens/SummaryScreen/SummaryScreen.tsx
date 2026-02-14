@@ -74,6 +74,7 @@ export default function SummaryScreen({ score, log, onReplay }: Props) {
     }
 
     function buildSharePayload() {
+        const url = "https://movie-game-three.vercel.app/";
         const rounds = log.map((d, i) => {
             if (!Number.isFinite(d)) return `Round ${i + 1}: ⏭️ Skipped`;
             const diff = d as number;
@@ -83,7 +84,7 @@ export default function SummaryScreen({ score, log, onReplay }: Props) {
             return `Round ${i + 1}: ${diff.toFixed(1)} ${icon}`;
         }).join('\n');
 
-        const summary = `MovieGame 🎬\nScore: ${score.toFixed(1)}`;
+        const summary = `MovieGame \n${url} 🎬\nScore: ${score.toFixed(1)}`;
         const text = `${summary}\n\n${rounds}`;
         return { text };
     }
