@@ -111,10 +111,7 @@ export default function GameRoot() {
                 </div>
             </main>
             {phase !== 'round' && (
-                <ControlsDock
-                    theme={theme}
-                    onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                />
+                <ControlsDock />
             )}
         </>
     );

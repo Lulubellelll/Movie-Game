@@ -1,15 +1,13 @@
-import ThemeToggle from "../ThemeToggle";
+
 import styles from "./ControlsDock.module.css";
 
 interface Props {
-  theme: 'light' | 'dark';
-  onToggleTheme: () => void;
 }
 
-export default function ControlsDock({ theme, onToggleTheme }: Props) {
+export default function ControlsDock({ }: Props) {
   return (
     <div className={styles.dock}>
-      <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+
     </div>
   );
 }
