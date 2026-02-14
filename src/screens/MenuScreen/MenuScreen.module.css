@@ -1,0 +1,161 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80svh;
+    padding: var(--space-8) var(--space-4);
+    gap: var(--space-5);
+}
+
+.scoreHint {
+    font-size: var(--font-xs);
+    color: var(--muted);
+    letter-spacing: 0.02em;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    width: 100%;
+    max-width: 320px;
+}
+
+.controlLabel {
+    font-size: var(--font-xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+}
+
+
+.advanced {
+    width: 100%;
+    max-width: 320px;
+}
+
+.advancedSummary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    width: 100%;
+    padding: var(--space-2) 0;
+    font-size: var(--font-sm);
+    color: var(--muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.advancedSummary:hover {
+    color: var(--text);
+}
+
+.summaryIcon {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    font-size: 0.75em;
+}
+
+.summaryIconOpen {
+    transform: rotate(180deg);
+}
+
+.advancedPanel {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.25s ease, opacity 0.2s ease, margin 0.25s ease;
+    margin-top: 0;
+}
+
+.advancedOpen .advancedPanel {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: var(--space-3);
+}
+
+
+.yearRow {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    justify-content: center;
+    margin-top: var(--space-3);
+}
+
+.selectWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.selectLabel {
+    font-size: var(--font-xs);
+    color: var(--muted);
+    text-align: left;
+}
+
+.menuSelect {
+    appearance: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font: inherit;
+    font-size: var(--font-sm);
+    padding: 0.45em 2em 0.45em 0.7em;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23777' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.6em center;
+}
+
+.menuSelect:focus {
+    outline: 2px solid var(--text);
+    outline-offset: 2px;
+}
+
+.rangeDash {
+    color: var(--muted);
+    font-size: var(--font-sm);
+}
+
+.error {
+    color: var(--error);
+    font-size: var(--font-sm);
+    margin-top: var(--space-2);
+}
+
+.actions {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer {
+    margin-top: var(--space-6);
+}
+
+.githubLink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--muted);
+    font-size: var(--font-xs);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    line-height: 1;
+}
+
+.githubLink:hover {
+    color: var(--text);
+}

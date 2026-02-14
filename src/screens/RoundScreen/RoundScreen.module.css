@@ -1,0 +1,154 @@
+.round {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    padding-top: var(--space-4);
+}
+
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.roundLabel {
+    font-size: var(--font-sm);
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+
+.progress {
+    height: 1px;
+    background: var(--border);
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.progressBar {
+    height: 100%;
+    background: var(--text);
+    transition: width 0.35s ease;
+}
+
+
+.media {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skeleton {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--surface);
+    border-radius: 4px;
+    animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+
+.controlsRow {
+    width: 100%;
+}
+
+
+.toast {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    margin-top: var(--space-3);
+    animation: fadeUp 180ms ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toastGood {
+    border-color: var(--success);
+}
+
+.toastMid {
+    border-color: var(--warning);
+}
+
+.toastBad {
+    border-color: var(--error);
+}
+
+.toastRow {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.toastIcon {
+    font-size: 1rem;
+}
+
+.toastText {
+    font-size: var(--font-sm);
+    color: var(--text);
+}
+
+.sep {
+    color: var(--muted);
+    font-size: var(--font-xs);
+}
+
+.sub {
+    font-size: var(--font-sm);
+    color: var(--muted);
+}
+
+.num {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.toastActions {
+    flex-shrink: 0;
+}
+
+.toastBtn {
+    font-size: var(--font-sm);
+    font-weight: 600;
+    color: var(--text);
+    padding: 0.4em 0.8em;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+}
+
+.toastBtn:hover {
+    background: var(--surface);
+    border-color: var(--text);
+}

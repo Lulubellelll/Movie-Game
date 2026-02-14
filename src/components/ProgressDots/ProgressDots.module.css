@@ -1,0 +1,18 @@
+/* ProgressDots — minimalist */
+.dots {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: background 0.2s ease;
+}
+
+.dot.active {
+    background: var(--text);
+}

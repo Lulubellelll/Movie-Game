@@ -1,0 +1,29 @@
+/* SegmentedControl — minimalist */
+.segmented {
+    display: inline-flex;
+    gap: 2px;
+    padding: 2px;
+    border-radius: var(--radius);
+    background: var(--surface);
+}
+
+.item {
+    padding: 0.4em 1em;
+    font-size: var(--font-sm);
+    font-weight: 500;
+    color: var(--muted);
+    border-radius: calc(var(--radius) - 2px);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.15s ease, background 0.15s ease;
+}
+
+.item:hover {
+    color: var(--text);
+}
+
+.item.active {
+    background: var(--text);
+    color: var(--bg);
+}

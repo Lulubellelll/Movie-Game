@@ -1,0 +1,19 @@
+/* ThemeToggle — minimalist */
+.toggle {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.toggle:hover {
+    color: var(--text);
+    border-color: var(--text);
+}

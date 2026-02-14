@@ -1,0 +1,186 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    padding-top: var(--space-8);
+}
+
+.leadText {
+    font-size: var(--font-sm);
+}
+
+.badges {
+    display: none;
+}
+
+.badge {
+    display: none;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    padding: var(--space-4) 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.k {
+    font-size: var(--font-xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+}
+
+.v {
+    font-size: var(--font-xl);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+}
+
+
+.chartCard {
+    margin-top: var(--space-2);
+}
+
+.chartHeader {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: var(--space-4);
+}
+
+.chartTitle {
+    font-size: var(--font-sm);
+    font-weight: 600;
+}
+
+.chartHint {
+    font-size: var(--font-xs);
+    color: var(--muted);
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.roundLbl {
+    font-size: var(--font-xs);
+    color: var(--muted);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+}
+
+.meter {
+    height: 6px;
+    background: var(--surface);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.roundVal {
+    display: flex;
+    gap: var(--space-2);
+    align-items: baseline;
+    min-width: 120px;
+    justify-content: flex-end;
+}
+
+.roundScore {
+    font-size: var(--font-xs);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.roundDiff {
+    font-size: var(--font-xs);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.roundSkip {
+    font-size: var(--font-xs);
+    color: var(--muted);
+    font-style: italic;
+}
+
+
+.legend {
+    display: flex;
+    gap: var(--space-4);
+    padding-top: var(--space-3);
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legendDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.legendText {
+    font-size: var(--font-xs);
+    color: var(--muted);
+}
+
+
+.shareRow {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    justify-content: center;
+}
+
+.shareBtn {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.shareBtn:hover {
+    border-color: var(--text);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
