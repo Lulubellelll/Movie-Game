@@ -72,12 +72,6 @@ export default function GuessForm({ onGuess, disabled = false, onSkip }: GuessFo
                 style={{ background: `linear-gradient(90deg, var(--text) ${percent}%, var(--border) ${percent}%)` }}
             />
 
-            <div className={styles.scaleHints}>
-                <span className={styles.scaleMarker} data-value="4">4.0</span>
-                <span className={styles.scaleHint}>Most movies range 4.0-8.0</span>
-                <span className={styles.scaleMarker} data-value="8">8.0</span>
-            </div>
-
             <div className={styles.actions}>
                 {onSkip && (
                     <button
