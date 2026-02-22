@@ -8,7 +8,7 @@ A Next.js web application where users guess IMDb ratings by watching movie trail
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 <div align="center">
-  <video src="public/GameRecoding.mp4" autoplay loop muted playsinline width="100%"></video>
+  <video src="public/GameRecording.mp4" autoplay loop muted playsinline width="100%"></video>
 </div>
 
 ## How to Play
